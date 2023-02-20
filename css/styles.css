@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: proxCondense;
+  src: url(fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+.site-wrapper {
+  max-width: 1280px;
+  position: relative;
+  min-height: 500px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.nav-holder {
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+.nav-holder nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #fff solid 2px;
+}
+.nav-holder nav .title {
+  text-decoration: none;
+  background-image: url(../img/logo/logo-white.png);
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 42px;
+}
+.nav-holder nav .links {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 500px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-holder nav .links a {
+  color: #fff;
+  text-decoration: none;
+  size: 15px;
+  margin: auto;
+}
+.nav-holder nav .links hr {
+  height: 21px;
+  width: 1px;
+  border-color: #79ADDC;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .nav-holder nav .title {
+    width: 0px;
+  }
+}
+
+.home .hero {
+  max-width: 100%;
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero.jpg);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.home .hero .callout {
+  margin-top: 100px;
+  width: 416px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+.home .hero .callout h1 {
+  font-family: proxCondense;
+  margin-bottom: 22px;
+  font-size: 60px;
+}
+.home .hero .callout p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 46px;
+  text-align: center;
+}
+.home .hero .callout span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #79ADDC;
+  padding: 9px 20px;
+  margin-bottom: 50px;
+}
+.home .promo {
+  max-width: 818px;
+  margin: -43px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  min-height: 304px;
+  font-family: proxCondense;
+}
+.home .promo span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #79ADDC;
+  padding: 5px 15px;
+  margin-top: 50px;
+  border-radius: 25px;
+}
+.home .form-area {
+  max-width: 818px;
+  margin: 50px auto 0 auto;
+  min-height: 304px;
+}
+.home .form-area h1 {
+  font-family: proxCondense;
+  font-size: 60px;
+  font-style: italic;
+}
+.home .form-area .form input {
+  height: 58px;
+  padding: 5px;
+  font-size: 18px;
+  border: solid #79ADDC 1.5px;
+}
+.home .form-area .form .two-input {
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 58px;
+}
+.home .form-area .form .two-input .left {
+  width: 344px;
+  height: 58px;
+}
+.home .form-area .form .two-input .right {
+  width: 453px;
+  height: 58px;
+}
+.home .form-area .form .single-line-input-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+}
+.home .form-area .form .single-line-input-holder .large-input {
+  width: 698px;
+}
+.home .form-area .form .single-line-input-holder .icon {
+  font-size: 24px;
+  position: absolute;
+  right: 30px;
+}
+.home .form-area .form .three-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.home .form-area .form .three-input .sectioned {
+  width: 103px;
+}
+.home .form-area .form .three-input .fa-caret-down {
+  font-size: 24px;
+  position: relative;
+  left: -65px;
+}
+.home .form-area .form .large-text {
+  display: flex;
+  justify-content: space-between;
+}
+.home .form-area .form .large-text ::placeholder {
+  text-align: left;
+  vertical-align: text-top;
+}
+.home .form-area .form .large-text .para {
+  width: 818px;
+  min-height: 192px;
+}
+.home .form-area .form .bigbutton {
+  max-width: 813px;
+  height: 58px;
+  border: #79ADDC solid 2px;
+  border-radius: 40px;
+  background-color: #79ADDC;
+  display: flex;
+  margin-top: 37px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.home .form-area .form .bigbutton span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 25px;
+  width: 818px;
+  margin: auto;
+  text-align: center;
+  background-color: #79ADDC;
+  padding: 5px 15px;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .home .form-area {
+    padding: 20px;
+  }
+}
+@media (max-width: 860px) {
+  .home .promo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 860px) {
+  .three-input .sectioned {
+    width: 50%;
+  }
+}
+.foot {
+  background-color: #79ADDC;
+  height: 90px;
+  margin-top: 29px;
+}
+.foot footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 29px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.foot footer .Tleft {
+  text-decoration: none;
+  background-image: url(../img/logo/logo-white.png);
+  width: 92px;
+  height: 42px;
+}
+.foot footer .Mid {
+  width: 140px;
+  align-items: baseline;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+.foot footer .contacts {
+  width: 70px;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .foot footer .Tleft {
+    width: 0px;
+  }
+}
+
+.background-props {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tour-component {
+  height: 304px;
+  width: 236px;
+  background-color: teal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tour-component .info-holder {
+  color: #fff;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.isreal-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/tour/tour-01.jpg);
+}
+
+.united-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/tour/tour-02.jpg);
+}
+
+.Aus-pic {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/tour/tour-03.jpg);
+}
+
+@media (max-width: 860px) {
+  .tour-component {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .tour-component {
+    margin-bottom: 70px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
